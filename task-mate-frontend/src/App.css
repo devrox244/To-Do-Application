@@ -1,0 +1,205 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1200px;
+  width: 95%;
+  margin-top: 20px;
+  padding: 20px; /* Keep the container padding */
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.category-dropdown {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #ddd;
+  font-size: 1em;
+  width: 150px;
+}
+
+.app-title {
+  font-size: 2.5em;
+  color: #64b5f6;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1; /* Title takes up available space */
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #ddd;
+  font-size: 1em;
+  width: 200px;
+}
+
+/* Add Form Container */
+.add-form-container {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+.add-form-container h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #eee;
+  text-align: center;
+}
+
+.add-form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.add-form-container input[type="text"],
+.add-form-container input[type="date"],
+.add-form-container textarea {
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #eee;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.add-form-container input::placeholder,
+.add-form-container textarea::placeholder {
+  color: #999;
+}
+
+.add-form-container button {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.add-form-container button:hover {
+  background-color: #4cae4c;
+}
+
+/* Task List Container */
+.task-list-container h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #eee;
+  text-align: center;
+}
+
+.task-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between; /* Align items to the start of the container */
+}
+
+/* Style for Edit Form */
+.edit-task-form-container {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+.edit-task-form-container h2 {
+  font-size: 1.5em; /* Slightly larger title */
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f0ad4e; /* A distinct orange color for the Edit title */
+  text-align: center;
+}
+
+.edit-task-form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.edit-task-form-container input[type="text"],
+.edit-task-form-container input[type="date"],
+.edit-task-form-container textarea {
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #eee;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.edit-task-form-container .button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.edit-task-form-container .button-group button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.edit-task-form-container .button-group .save-button {
+  background-color: #5cb85c; /* Green for Save */
+  color: white;
+}
+
+.edit-task-form-container .button-group .save-button:hover {
+  background-color: #4cae4c;
+}
+
+.edit-task-form-container .button-group .cancel-button {
+  background-color: #f0ad4e; /* Orange for Cancel */
+  color: white;
+}
+
+.edit-task-form-container .button-group .cancel-button:hover {
+  background-color: #eb9316;
+}
